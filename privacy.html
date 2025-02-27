@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade - adstock.ai</title>
+  <link rel="icon" href="imagens/icon-Adstock-Vetor2.svg" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/alpinejs" defer></script>
+  <!-- Configuração Tailwind Customizada -->
+  <style type="text/tailwindcss">
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    @layer base {
+      /* Importa a fonte, se desejar */
+      @font-face {
+        font-family: 'Plus Jakarta Sans';
+        font-weight: 400;
+        src: url('https://cdn.rareblocks.xyz/collection/clarity/fonts/PlusJakartaSans-Regular.woff2') format('woff2');
+      }
+    }
+  </style>
+  <!-- Estilos para o card com degradê -->
+  <style>
+    @keyframes borderAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .gradient-border {
+      position: relative;
+      padding: 4px;
+      border-radius: 12px;
+      background: linear-gradient(45deg, #ff44ec, #ff675e, #44bcff, #44ff9a);
+      background-size: 400% 400%;
+      animation: borderAnimation 3s ease infinite;
+    }
+    .card-content {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-pj">
+  <!-- Header -->
+  <header class="py-4 bg-white shadow">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <a href="/" class="flex items-center">
+        <img src="imagens/Logo Adstock Vetor.png" alt="AdStock Logo" class="h-8">
+        <span class="ml-2 text-xl font-bold">adstock.ai</span>
+      </a>
+      <nav class="space-x-4">
+        <a href="terms.html" class="text-gray-700 hover:text-gray-900">Termos de Serviço</a>
+        <a href="/" class="text-gray-700 hover:text-gray-900">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Título -->
+  <section class="py-12">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold mb-2">Política de Privacidade</h1>
+      <p class="text-lg text-gray-600">Conheça como cuidamos dos seus dados na adstock.ai</p>
+    </div>
+  </section>
+
+  <!-- Card com Degradê -->
+  <section class="container mx-auto px-4 mb-12">
+    <div class="gradient-border mx-auto max-w-3xl">
+      <div class="card-content">
+        <p class="mb-4">
+          Bem-vindo à Política de Privacidade da adstock.ai. Valorizamos sua privacidade e estamos comprometidos em proteger seus dados pessoais.
+        </p>
+        <div class="mb-6">
+          <h2 class="text-2xl font-bold mb-2">1. Informações que Coletamos</h2>
+          <p>
+            Coletamos informações como nome, e-mail e dados de uso para melhorar nossos serviços.
+          </p>
+        </div>
+        <div class="mb-6">
+          <h2 class="text-2xl font-bold mb-2">2. Como Usamos as Informações</h2>
+          <p>
+            Seus dados são usados para personalizar sua experiência, fornecer suporte e melhorar a eficiência dos nossos serviços.
+          </p>
+        </div>
+        <div class="mb-6">
+          <h2 class="text-2xl font-bold mb-2">3. Compartilhamento de Informações</h2>
+          <p>
+            Não compartilhamos seus dados pessoais com terceiros sem sua autorização, salvo quando exigido por lei.
+          </p>
+        </div>
+        <div class="mb-6">
+          <h2 class="text-2xl font-bold mb-2">4. Segurança</h2>
+          <p>
+            Adotamos medidas de segurança para proteger seus dados contra acesso não autorizado, alteração ou destruição.
+          </p>
+        </div>
+        <div class="mb-6">
+          <h2 class="text-2xl font-bold mb-2">5. Alterações a Esta Política</h2>
+          <p>
+            Esta política pode ser atualizada periodicamente. Recomendamos que você a revise regularmente.
+          </p>
+        </div>
+        <div class="mb-6">
+          <h2 class="text-2xl font-bold mb-2">Contato</h2>
+          <p>
+            Dúvidas? Entre em contato: <a href="mailto:suporte@adstock.ai" class="text-blue-600">suporte@adstock.ai</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-4">
+    <div class="container mx-auto px-4 text-center text-gray-600">
+      &copy; 2025 adstock.ai. Todos os direitos reservados.
+    </div>
+  </footer>
+</body>
+</html>
